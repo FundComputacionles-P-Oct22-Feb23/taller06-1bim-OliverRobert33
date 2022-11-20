@@ -1,0 +1,39 @@
+1. Inicio 
+
+2. nombre_cliente, x(15)[{A-Z}, {a-z}, {BS}]
+3. costo, d[0-n]
+4. tipo_cliente, i [0-n]
+5. descuento1, d[0-n]
+6. descuento2, d[0-n
+7. reporte, x(200)[{A-Z}, {a-z}, {BS}]
+8. contador, i[0-n]
+
+9. descuento1 <-- 10
+10. descuento2 <-- 20
+11. reporte <-- ""
+12. contador <-- 1 
+
+13. 	Mientras contador <= 7 entonces
+
+14. 		<<"Ingrese el nombre del cliente"
+15.		>> nombre_cliente
+16.		<<"Ingrese el costo de la computadora"
+17. 		>> costo
+18.		<<"Ingrese el tipo de cliente que es 0 "No habitual", 1 "de vez en cuando " y 2 "Habitual" "
+19.		>> tipo_cliente
+
+20. 		Si tipo_cliente = 1 entonces
+21.			costo <-- costo * descuento1 /100
+22. 		FinSi
+23. 		Si tipo_cliente = 2 entonces 
+24.			costo <-- costo * descuento2 /100
+25. 		FinSi
+
+26. 	reporte <-- reporte + "Cliente tipo" + cliente_tipo + "," + "compra computadora con precio" + "$" + costo + "\n"
+27. 	contador <-- contador + 1
+
+28.	FinMientras
+
+29.		<<reporte
+
+30. Fin 

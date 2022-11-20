@@ -1,0 +1,22 @@
+1. Inicio 
+
+2. numero1, i[0-n]	//contador
+3. numero2, i[0-n]	//contador
+4. salida, x(500)[{A-Z}, {a-z}, {/}, {BS}]
+
+5. numero1 <-- 5
+6. numero2 <-- 10
+7. salida <-- ""
+
+8. 	Mientras numero1 <= 30 entonces
+
+9. 	salida <-- salida + numero1 + "/" + numero2 + "\n"
+ 
+10.		numero1 <-- numero1 + 5
+11.		numero2 <-- numero2 + 2
+
+12.	FinMientras
+13. 		<<salida
+14. Fin
+
+

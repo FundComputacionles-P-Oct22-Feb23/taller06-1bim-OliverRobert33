@@ -1,0 +1,32 @@
+1. Inicio
+
+2. nombre, x(25)[{A-Z}{a-z}{BS}]
+3. promedio, d[0-10]
+4. contador, i[0-n]	//contador
+5. estado, x(50)[{A-Z}, {a-z}, {BS}]
+6. reporte, x(200)[{A-Z}, {a-z}, {BS}]
+
+7. contador <-- 1
+8. estado <-- ""
+9. reporte <-- ""
+
+10. 	Mientras contador <= 4 entonces 
+
+11.		<<"Ingrese el NOMBRE del estudiante"
+12. 		>> nombre
+13. 		<<"Ingrese el promedio del estudiante"
+14. 		>> promedio	
+
+15. 		Si promedio == 7 and <= 10
+16.			<<estado <-- "Aprobado"
+17.		De lo contrario 
+18.			<<estado <-- "Reprobado" 
+19.		FinSi
+
+20.	reporte <-- nombre + "\t" + contador + "\t" + promedio + "\t" + estado + "\t" + "\n"
+21.	contador <-- contador + 1
+
+22.	FinMientras 	 
+23. <<reporte
+
+24. Fin

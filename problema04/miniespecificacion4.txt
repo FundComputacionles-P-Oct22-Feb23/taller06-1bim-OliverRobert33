@@ -1,0 +1,53 @@
+1. Inicio 
+
+2. nombre_jugador, x(500)[{A-Z}, {a-z}, {BS}]
+3. posicion_jugador, x(500)[{A-Z}, {a-z}, {BS}]
+4. edad, i[0-n] 
+5. estatura, d[0-n]
+6. promedio_edades, d[0-n]
+7. promedio_estaturas, d[0-n]
+8. reporte, x(1000)[{A-Z}, {a-z}, {-}, {BS}] <-- "" 
+
+9. bandera, l <-- True
+10. opcion, x(1)[{A-Z}{a-z}{BS}]
+
+11. contador1, i[0-n] <-- 1	//jugadores ingresados
+12. contador2, i [0-n]  <-- 0	//edades jugadores
+13. contador3, d [0-n] <-- 0	//estatura jugadores
+
+
+14.	Mientras bandera == True entonces
+
+15.		<<"Ingrese el NOMBRE y APELLIDO del jugador"
+16.		>> nombre_jugador
+17.		<<"Ingrese la POSICION del jugador en el campo de juego"
+18. 		>> posicion_jugador
+19. 		<<"Ingrese la EDAD del jugador"
+20. 		>> edad
+21.		<<"Ingrese la ESTATURA del jugador"
+22. 		>> estatura
+
+23. 	reporte <-- reporte + contador1 + "." + " " + nombre_jugador + " " + "-" + posicion_jugador 
+			+ "-" + "," + " " + "edad" + edad + "," + " " + "estatura" + estatura + "\n" 
+24.	contador2 <-- contador2 + edad
+25.	contador3 <-- contador3 + estatura
+	
+26. 		<< "Si deseas terminar el proceso. Ingrese S para salir"
+27.			>> opcion
+
+28. 		Si opcion == "s" entonces
+29.			bandera <-- False
+30.		FinSi
+
+31.		contador1 <-- contador1 + 1
+
+32.	FinMientras
+
+33.		promedio_edades <-- contador2 / (contador1 - 1)
+34.		promedio_estaturas <-- contador3 / (contador1 -1)
+
+35. 	<< Listado de jugadores + "\n" + "reporte"
+36.	<< Promedio edades: "promedio_edades"
+37. 	<< Promedio estaturas: "promedio_estaturas" 	
+
+38. Fin	 

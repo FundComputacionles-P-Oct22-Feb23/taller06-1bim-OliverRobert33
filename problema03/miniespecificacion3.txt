@@ -1,0 +1,29 @@
+1. Inicio
+
+2. nombre, x(50)[{A-Z}, {a-z}, {BS}]
+3. dias_trabajados, i[0-n]
+4. costo_trabajo, d[0-n]
+5. total, d[0-n]
+6. reporte, x(200)[{A-Z}, {a-z}, {BS}]
+7. numero, i[0-n]
+
+8. reporte <-- ""
+9. numero <--1
+
+10. 	Mientras numero <= 5 entonces
+
+11. 		<<"Ingrese el nombre del empleado"
+12.		>> nombre
+13.		<<"Ingrese los dias trabajados del empleado"
+14.		>> dias_trabajados
+15.		<<"Ingrese el costo del dia de trabajo"
+16. 		>> costo_trabajo
+
+17. 	total <-- dias_trabajados * costo_trabajo
+18. 	reporte <-- reporte + nombre + "\t" + dias_trabajados + "\t" + costo_trabajo + "\t" + total + "\t" + "\n"
+
+19. 	numero <-- numero + 1
+
+20. 	FinMientras
+21.		<< reporte
+22. Fin
